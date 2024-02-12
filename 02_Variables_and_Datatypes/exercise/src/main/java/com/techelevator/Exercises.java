@@ -33,6 +33,7 @@ public class Exercises {
         int birdsOnABranch = 4;
         int birdsThatFlyAway = 1;
         int birdsRemaining = birdsOnABranch - birdsThatFlyAway;
+        System.out.println(birdsRemaining);
 
         /* Exercise 2
         2. There are 6 birds and 3 nests. How many more birds are there than
@@ -42,7 +43,7 @@ public class Exercises {
         int numberOfBirds = 6;
         int numberOfNests = 3;
         int numberOfExtraBirds = numberOfBirds - numberOfNests;
-
+        System.out.println(numberOfExtraBirds);
         /* Exercise 3
         3. 3 raccoons are playing in the woods. 2 go home to eat dinner. How
         many raccoons are left in the woods?
@@ -50,14 +51,14 @@ public class Exercises {
         int raccoonsInWoods = 3;
         int goHomeRaccoons = 2;
         int raccoonsLeftInWoods = raccoonsInWoods - goHomeRaccoons;
-
+        System.out.println(raccoonsLeftInWoods);
         /* Exercise 4
         4. There are 5 flowers and 3 bees. How many less bees than flowers?
         */
         int numberOfFlowers = 5;
         int numberOfBees = 3;
         int beesLessThenFlowers = numberOfFlowers - numberOfBees;
-
+        System.out.println(beesLessThenFlowers);
         /* Exercise 5
         5. 1 lonely pigeon was eating breadcrumbs. Another pigeon came to eat
         breadcrumbs, too. How many pigeons are eating breadcrumbs now?
@@ -65,7 +66,7 @@ public class Exercises {
         int initialPigeon = 1;
         int additionalPigeon = 1;
         int totalPigeonCount = initialPigeon + additionalPigeon;
-
+        System.out.println(totalPigeonCount);
         /* Exercise 6
         6. 3 owls were sitting on the fence. 2 more owls joined them. How many
         owls are on the fence now?
@@ -73,7 +74,7 @@ public class Exercises {
         int owlsOnFence = 3;
         int additionalOwls = 2;
         int totalOwlsCount = owlsOnFence + additionalOwls;
-
+        System.out.println(totalOwlsCount);
         /* Exercise 7
         7. 2 beavers were working on their home. 1 went for a swim. How many
         beavers are still working on their home?
@@ -81,7 +82,7 @@ public class Exercises {
         int beaversWorkingOnHome = 2;
         int goSwimBeaver = 1;
         int remainingBeaver = beaversWorkingOnHome - goSwimBeaver;
-
+        System.out.println(remainingBeaver);
         /* Exercise 8
         8. 2 toucans are sitting on a tree limb. 1 more toucan joins them. How
         many toucans in all?
@@ -89,7 +90,7 @@ public class Exercises {
         int initialToucan = 2;
         int additionalToucan = 1;
         int totalToucans = initialToucan + additionalToucan;
-
+        System.out.println(totalToucans);
 
 
         /* Exercise 9
@@ -99,7 +100,7 @@ public class Exercises {
         int squirrelCount = 4;
         int nutCount = 2;
         int extraSquirrels = squirrelCount - nutCount;
-
+        System.out.println(extraSquirrels);
 
 
         /* Exercise 10
@@ -110,7 +111,7 @@ public class Exercises {
         int dime = 1;
         int nickels = 2;
         double totalMoneyFound = (quaters * 0.25) + (dime * 0.10) + (nickels * 0.05);
-
+        System.out.println(totalMoneyFound);
         /* Exercise 11
         11. Mrs. Hilt's favorite first grade classes are baking muffins. Mrs. Brier's
         class bakes 18 muffins, Mrs. MacAdams's class bakes 20 muffins, and
@@ -121,7 +122,7 @@ public class Exercises {
         int muffinsFromClassMacAdams = 20;
         int muffinsFromClassFlannery = 17;
         int totalMuffins = muffinsFromClassBrier + muffinsFromClassMacAdams + muffinsFromClassFlannery;
-
+        System.out.println(totalMuffins);
 
         /* Exercise 12
         12. Mrs. Hilt bought a yoyo for 24 cents and a whistle for 14 cents. How
@@ -130,7 +131,7 @@ public class Exercises {
         double yoyoPrice = 0.24;
         double whistlePrice = 0.14;
         double totalMoneyForToys = yoyoPrice + whistlePrice;
-
+        System.out.println(totalMoneyForToys);
         /* Exercise 13
         13. Mrs. Hilt made 5 Rice Krispies Treats. She used 8 large marshmallows
         and 10 mini marshmallows.How many marshmallows did she use
@@ -139,7 +140,7 @@ public class Exercises {
         int largeMarshmallows = 8;
         int miniMarshmallows = 10;
         int totalMarshmallows = largeMarshmallows + miniMarshmallows;
-
+        System.out.println(totalMarshmallows);
         /* Exercise 14
         14. At Mrs. Hilt's house, there was 29 inches of snow, and Brecknock
         Elementary School received 17 inches of snow. How much more snow
@@ -148,7 +149,7 @@ public class Exercises {
         int snowAtMrsHiltHouse = 29;
         int snowAtBrecknockElementary = 17;
         int moreSnowAtMrsHiltHouse = snowAtMrsHiltHouse - snowAtBrecknockElementary;
-
+        System.out.println(moreSnowAtMrsHiltHouse);
 
         /* Exercise 15
         15. Mrs. Hilt has $10. She spends $3 on a toy truck and $2.50 on a pencil
@@ -158,6 +159,7 @@ public class Exercises {
         double toyTruckCost = 3.0;
         double pencilCaseCost = 2.50;
         double moneyLeft = moneyMrsHiltHas - (toyTruckCost + pencilCaseCost);
+        System.out.println(moneyLeft);
 
         /* Exercise 16
         16. Josh had 16 marbles in his collection. He lost 7 marbles. How many
@@ -166,6 +168,7 @@ public class Exercises {
         int marblesInCollection = 16;
         int lostMarbles = 7;
         int marblesNow = marblesInCollection - lostMarbles;
+        System.out.println(marblesNow);
 
         /* Exercise 17
         17. Megan has 19 seashells. How many more seashells does she need to
@@ -173,6 +176,7 @@ public class Exercises {
         */
         int seashellsMeganHas = 19;
         int seashellsNeeded = 25 - seashellsMeganHas;
+        System.out.println(seashellsNeeded);
 
         /* Exercise 18
         18. Brad has 17 balloons. 8 balloons are red and the rest are green. How
@@ -181,6 +185,7 @@ public class Exercises {
         int totalBalloons = 17;
         int redBalloons = 8;
         int greenBalloons = totalBalloons - redBalloons;
+        System.out.println(greenBalloons);
 
         /* Exercise 19
         19. There are 38 books on the shelf. Marta put 10 more books on the shelf.
@@ -189,6 +194,8 @@ public class Exercises {
         int booksOnShelf = 38;
         int booksAddedByMarta = 10;
         int totalBooksOnShelfNow = booksOnShelf + booksAddedByMarta;
+        System.out.println(totalBooksOnShelfNow);
+
 
         /* Exercise 20
         20. A bee has 6 legs. How many legs do 8 bees have?
@@ -196,6 +203,7 @@ public class Exercises {
         int legsPerBee = 6;
         int numOfBees = 8;
         int totalLegs = legsPerBee * numOfBees;
+        System.out.println(totalLegs);
 
         /* Exercise 21
         21. Mrs. Hilt bought an ice cream cone for 99 cents. How much would 2 ice
@@ -203,6 +211,7 @@ public class Exercises {
         */
         double costOfOneIceCream = 0.99;
         double costOfTwoIceCreams = 2 * costOfOneIceCream;
+        System.out.println(costOfTwoIceCreams);
 
         /* Exercise 22
         22. Mrs. Hilt wants to make a border around her garden. She needs 125
@@ -212,7 +221,7 @@ public class Exercises {
         int rocksNeededForBorder = 125;
         int rocksMrsHiltHas = 64;
         int rocksNeededToCompleteBorder = rocksNeededForBorder - rocksMrsHiltHas;
-
+        System.out.println(rocksNeededToCompleteBorder);
 
         /* Exercise 23
         23. Mrs. Hilt had 38 marbles. She lost 15 of them. How many marbles does
@@ -221,6 +230,7 @@ public class Exercises {
         int marblesMrsHiltHad = 38;
         int marblesMrsHiltLost = 15;
         int marblesMrsHiltNowHas = marblesMrsHiltHad - marblesMrsHiltLost;
+        System.out.println(marblesMrsHiltNowHas);
 
         /* Exercise 24
         24. Mrs. Hilt and her sister drove to a concert 78 miles away. They drove 32
@@ -229,6 +239,7 @@ public class Exercises {
         int totalMilesToConcert = 78;
         int milesDrivenBeforeGas = 32;
         int milesLeftToDrive = totalMilesToConcert - milesDrivenBeforeGas;
+        System.out.println(milesLeftToDrive);
 
         /* Exercise 25
         25. Mrs. Hilt spent 1 hour and 30 minutes shoveling snow on Saturday
@@ -238,7 +249,7 @@ public class Exercises {
         int timeShovelingSaturdayMorning = 90;
         int timeShovelingSaturdayAfternoon = 45;
         int totalTimeShoveling = timeShovelingSaturdayMorning + timeShovelingSaturdayAfternoon;
-
+        System.out.println(totalBalloons);
 
         /* Exercise 26
         26. Mrs. Hilt bought 6 hot dogs. Each hot dog cost 50 cents. How much
@@ -247,7 +258,7 @@ public class Exercises {
         int numberOfHotDogsBought = 6;
         double costPerHotDog = 0.50;
         double totalCostOfHotDogs = numberOfHotDogsBought * costPerHotDog;
-
+        System.out.println(totalCostOfHotDogs);
 
         /* Exercise 27
         27. Mrs. Hilt has 50 cents. A pencil costs 7 cents. How many pencils can
@@ -256,6 +267,7 @@ public class Exercises {
         double moneyMrsHiltHasForPencil = 0.50;
         double costOfOnePencil = 0.07;
         int totalPencilSheCanBuy = (int) (moneyMrsHiltHasForPencil / costOfOnePencil);
+        System.out.println(totalPencilSheCanBuy);
 
         /* Exercise 28
         28. Mrs. Hilt saw 33 butterflies. Some of the butterflies were red and others
@@ -265,7 +277,7 @@ public class Exercises {
         int totalButterfliesSeen = 33;
         int orangeButterfliesSeen = 20;
         int redButterfliesSeen = totalButterfliesSeen - orangeButterfliesSeen;
-
+        System.out.println(redButterfliesSeen);
 
         /* Exercise 29
         29. Kate gave the clerk $1.00. Her candy cost 54 cents. How much change
@@ -274,6 +286,7 @@ public class Exercises {
         double amountKateGave = 1.00;
         double costOfCandy = 0.54;
         double changeKateShouldGet = amountKateGave - costOfCandy;
+        System.out.println(changeKateShouldGet);
 
         /* Exercise 30
         30. Mark has 13 trees in his backyard. If he plants 12 more, how many trees
@@ -282,13 +295,14 @@ public class Exercises {
         int treesMarkHad = 13;
         int treesMarkPlanted = 12;
         int totalTreesMarkWillHave = treesMarkHad + treesMarkPlanted;
+        System.out.println(totalBalloons);
 
         /* Exercise 31
         31. Joy will see her grandma in two days. How many hours until she sees
         her?
         */
         int hoursUntilJoySeesGrandma = 2 * 24;
-
+        System.out.println(hoursUntilJoySeesGrandma);
 
         /* Exercise 32
         32. Kim has 4 cousins. She wants to give each one 5 pieces of gum. How
@@ -297,7 +311,7 @@ public class Exercises {
         int numberOfCousinsKimHas = 4;
         int piecesOfGumPerCousin = 5;
         int totalPiecesOfGumNeeded = numberOfCousinsKimHas * piecesOfGumPerCousin;
-
+        System.out.println(totalPiecesOfGumNeeded);
 
         /* Exercise 33
         33. Dan has $3.00. He bought a candy bar for $1.00. How much money is
@@ -306,6 +320,7 @@ public class Exercises {
         double moneyDanHas = 3.00;
         double costOfCandyBar = 1.00;
         double moneyLeftAfterCandyBar = moneyDanHas - costOfCandyBar;
+        System.out.println(moneyLeftAfterCandyBar);
 
         /* Exercise 34
         34. 5 boats are in the lake. Each boat has 3 people. How many people are
@@ -314,6 +329,7 @@ public class Exercises {
         int numberOfBoats = 5;
         int peoplePerBoat = 3;
         int totalPeopleOnBoats = numberOfBoats * peoplePerBoat;
+        System.out.println(totalPeopleOnBoats);
 
         /* Exercise 35
         35. Ellen had 380 legos, but she lost 57 of them. How many legos does she
@@ -322,6 +338,7 @@ public class Exercises {
         int legosEllenHad = 380;
         int legosEllenLost = 57;
         int legosEllenNowHas = legosEllenHad - legosEllenLost;
+        System.out.println(legosEllenNowHas);
 
         /* Exercise 36
         36. Arthur baked 35 muffins. How many more muffins does Arthur have to
@@ -329,6 +346,7 @@ public class Exercises {
         */
         int muffinsArthurBaked = 35;
         int muffinsArthurNeedsToBake = 83 - muffinsArthurBaked;
+        System.out.println(muffinsArthurNeedsToBake);
 
         /* Exercise 37
         37. Willy has 1400 crayons. Lucy has 290 crayons. How many more
@@ -337,6 +355,7 @@ public class Exercises {
         int crayonsWillyHas = 1400;
         int crayonsLucyHas = 290;
         int moreCrayonsWillyHas = crayonsWillyHas - crayonsLucyHas;
+        System.out.println(moreCrayonsWillyHas);
 
         /* Exercise 38
         38. There are 10 stickers on a page. If you have 22 pages of stickers, how
@@ -345,6 +364,7 @@ public class Exercises {
         int stickersPerPage = 10;
         int pagesOfStickers = 22;
         int totalStickers = stickersPerPage * pagesOfStickers;
+        System.out.println(totalStickers);
 
         /* Exercise 39
         39. There are 100 cupcakes for 8 children to share. How much will each
@@ -353,7 +373,7 @@ public class Exercises {
         int cupcakesAvailable = 100;
         int childrenSharingCupcakes = 8;
         double cupcakesPerChild = (double) cupcakesAvailable / childrenSharingCupcakes;
-
+        System.out.println(cupcakesPerChild);
 
         /* Exercise 40
         40. She made 47 gingerbread cookies which she will distribute equally in
@@ -363,6 +383,7 @@ public class Exercises {
         int gingerbreadCookiesMade = 47;
         int cookiesPerJar = 6;
         int cookiesNotPlacedInJar = gingerbreadCookiesMade % cookiesPerJar;
+        System.out.println(cookiesNotPlacedInJar);
 
         /* Exercise 41
         41. She also prepared 59 croissants which she plans to give to her 8
@@ -372,6 +393,7 @@ public class Exercises {
         int croissantsPrepared = 59;
         int neighborsSharingCroissants = 8;
         int croissantsLeftWithMarian = croissantsPrepared % neighborsSharingCroissants;
+        System.out.println(croissantsLeftWithMarian);
 
         /* Exercise 42
         42. Marian also baked oatmeal cookies for her classmates. If she can
@@ -381,6 +403,7 @@ public class Exercises {
         int cookiesPerTray = 12;
         int oatmealCookiesToPrepare = 276;
         int traysNeeded = oatmealCookiesToPrepare / cookiesPerTray;
+        System.out.println(traysNeeded);
 
         /* Exercise 43
         43. Marian’s friends were coming over that afternoon so she made 480
@@ -390,6 +413,7 @@ public class Exercises {
         int pretzelsMade = 480;
         int pretzelsPerServing = 12;
         int servingsPrepared = pretzelsMade / pretzelsPerServing;
+        System.out.println(servingsPrepared);
 
         /* Exercise 44
         44. Lastly, she baked 53 lemon cupcakes for the children living in the city
@@ -399,6 +423,7 @@ public class Exercises {
         int lemonCupcakesBaked = 53;
         int cupcakesPerBox = 3;
         int boxesGivenAway = (lemonCupcakesBaked - 2) / cupcakesPerBox;
+        System.out.println(boxesGivenAway);
 
         /* Exercise 45
         45. Susie's mom prepared 74 carrot sticks for breakfast. If the carrots
@@ -408,6 +433,7 @@ public class Exercises {
         int carrotSticksPrepared = 74;
         int peopleServed = 12;
         int carrotSticksLeft = carrotSticksPrepared % peopleServed;
+        System.out.println(carrotSticksLeft);
 
         /* Exercise 46
         46. Susie and her sister gathered all 98 of their teddy bears and placed
@@ -417,6 +443,8 @@ public class Exercises {
         int teddyBearsOwned = 98;
         int teddyBearsPerShelf = 7;
         int shelvesFilled = teddyBearsOwned / teddyBearsPerShelf;
+        System.out.println(shelvesFilled);
+
 
         /* Exercise 47
         47. Susie’s mother collected all family pictures and wanted to place all of
@@ -426,6 +454,8 @@ public class Exercises {
         int totalPictures = 480;
         int picturesPerAlbum = 20;
         int albumsNeeded = totalPictures / picturesPerAlbum;
+        System.out.println(albumsNeeded);
+
 
         /* Exercise 48
         48. Joe, Susie’s brother, collected all 94 trading cards scattered in his
@@ -437,6 +467,8 @@ public class Exercises {
         int cardsPerBox = 8;
         int filledBoxes = tradingCardsCollected / cardsPerBox;
         int cardsInUnfilledBox = tradingCardsCollected % cardsPerBox;
+        System.out.println(filledBoxes);
+        System.out.println(cardsInUnfilledBox);
 
         /* Exercise 49
         49. The Milky Way galaxy contains 300 billion stars. The Andromeda galaxy
@@ -445,6 +477,7 @@ public class Exercises {
         long starsInMilkyWay = 300_000_000_000L;
         long starsInAndromeda = 1_000_000_000_000L;
         long totalStars = starsInMilkyWay + starsInAndromeda;
+        System.out.println(totalStars);
 
         /* Exercise 50
         50. Cristina baked 17 croissants. If she planned to serve this equally to
@@ -453,7 +486,7 @@ public class Exercises {
         int croissantsBaked = 17;
         int guestsServed = 7;
         double croissantsPerGuest = (double) croissantsBaked / guestsServed;
-
+        System.out.println(croissantsPerGuest);
 
 	    /* Exercise 51
 	    51. Bill and Jill are house painters. Bill can paint a standard room in 2.15 hours, while Jill averages
@@ -465,7 +498,7 @@ public class Exercises {
         double jillsRateToPaintARoom = 1.90;
         double combinedRate = (1 / billsRateToPaintARoom) + (1 / jillsRateToPaintARoom);
         double timeForFiveRooms = 5 / combinedRate;
-
+        System.out.println(timeForFiveRooms);
 
 	    /* Exercise 52
 	    52. Create and assign variables to hold a first name, last name, and middle initial. Using concatenation,
@@ -487,7 +520,7 @@ public class Exercises {
         int distanceNewYorkToChicago = 800;
         int milesAlreadyTravelled = 537;
         int percentageCompleted = (milesAlreadyTravelled * 100) / distanceNewYorkToChicago;
-
+        System.out.println(percentageCompleted);
     }
 
 }
