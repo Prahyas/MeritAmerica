@@ -17,7 +17,7 @@ public class Exercise03_ShippingTotal {
      * Scamper Shipping Company charges $0.50 per pound for items up to and
      * including 40 pounds. It charges $0.75 per pound for items over 40 pounds.
      * Return the shipping rate when provided a weight in pounds.
-     * 
+     *
      * Examples:
      * calculateShippingRate(10) ➔ 0.50
      * calculateShippingRate(25) ➔ 0.50
@@ -25,7 +25,12 @@ public class Exercise03_ShippingTotal {
      * calculateShippingRate(45) ➔ 0.75
      */
     public double calculateShippingRate(int weightPounds) {
-        return 0.0;
+
+        if (weightPounds <= MAX_WEIGHT_POUNDS) {
+            return UP_TO_40_LB_RATE;
+        } else {
+            return OVER_40_LB_RATE;
+        }
     }
 
     /*
@@ -33,9 +38,9 @@ public class Exercise03_ShippingTotal {
      * including 40 pounds. It charges $0.75 per pound for items over 40 pounds.
      * Implement the logic needed to calculate the shipping cost when provided a
      * weight in pounds.
-     * 
+     *
      * You may use calculateShippingRate() in your solution.
-     * 
+     *
      * Examples:
      * calculateShippingTotal(10) ➔ 5.0
      * calculateShippingTotal(25) ➔ 12.5
@@ -43,7 +48,7 @@ public class Exercise03_ShippingTotal {
      * calculateShippingTotal(45) ➔ 33.75
      */
     public double calculateShippingTotal(int weightPounds) {
-        return 0.0;
+        return weightPounds * calculateShippingRate(weightPounds);
     }
 
     /*
@@ -51,9 +56,9 @@ public class Exercise03_ShippingTotal {
      * give them 10% off of their order.
      * Implement the logic to calculate the correct shipping rate when provided a
      * weight in pounds and a boolean value for hasDiscount.
-     * 
+     *
      * You may use any previous methods in your solution.
-     * 
+     *
      * Examples:
      * calculateShippingTotal(10, false) ➔ 5.0
      * calculateShippingTotal(10, true) ➔ 4.5
@@ -64,8 +69,12 @@ public class Exercise03_ShippingTotal {
      * calculateShippingTotal(45, false) ➔ 33.75
      * calculateShippingTotal(45, true) ➔ 30.375
      */
-    public double calculateShippingTotal(int weightPounds, boolean hasDiscount) {
-        return 0.0;
+    public double calculateShippingTotalDiscounted(int weightPounds, boolean hasDiscount) {
+        if (hasDiscount) {
+            return calculateShippingTotal(weightPounds) - (calculateShippingTotal(weightPounds) * 0.10);
+        } else {
+            return calculateShippingTotal(weightPounds);
+        }
     }
 
 }
