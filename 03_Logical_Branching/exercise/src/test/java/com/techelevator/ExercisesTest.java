@@ -595,7 +595,6 @@ public class ExercisesTest {
         acceptPackageWeightOver40.addTest(new TestingLibrary.Test(new Object[]{41}, false));
         acceptPackageWeightOver40.addTest(new TestingLibrary.Test(new Object[]{50}, false));
 
-
         List<TestingLibrary.TestGroup> testGroups = new ArrayList<>();
         testGroups.add(acceptPackageWeightUpTo40);
         testGroups.add(acceptPackageWeightOver40);
