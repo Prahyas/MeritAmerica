@@ -34,6 +34,7 @@ public class KilometerConverter {
 }
 ```
 
+
 ## Step Two: Create a `Scanner` to read from `System.in`
 
 You'll need an instance of the `Scanner` class to read what the user types in, so create one by calling the constructor and storing a reference to the new object in a variable named `input`:
