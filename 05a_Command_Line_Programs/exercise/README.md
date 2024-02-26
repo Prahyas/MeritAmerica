@@ -4,8 +4,8 @@ The purpose of this exercise is to allow you to practice and reinforce the skill
 
 * Convert a temperature from one unit of measure to another.
 * Convert a length from one unit of measure to another.
-* Calculate and display the Fibonacci sequence for a given number.
-* Convert a series of numbers from decimal to binary.
+* Calculate and display the Fibonacci sequence for a given number. 
+* Convert a series of numbers from decimal to binary. 
 
 ## Learning objectives
 
@@ -148,11 +148,11 @@ Try repeating the process yourself to convert 19 to "10011", its binary equivale
 
 | **Value** | **Value / 2** | **Remainder** | **Solution String** |
 |:---------:|:-------------:|:-------------:|:-------------------:|
-|     19    |               |               |                     |
-|           |               |               |                     |
-|           |               |               |                     |
-|           |               |               |                     |
-|           |               |               |   **"10011"**       |
+|     19    |       9        |       1        |          "1"           |
+|     9      |      4         |     1          |         "11"           |
+|     4      |      2         |     0         |         "011"            |
+|     2      |      1        |      0         |         "0011"            |
+|     1      |      0        |      1         |   **"10011"**       |
 
 
 #### Expected output
