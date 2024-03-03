@@ -6,7 +6,7 @@ import java.util.List;
 public class Exercises {
 
 	/*
-	 * Note, for-each is preferred, and should be used when possible..
+	 * Note, for-each is preferred, and should be used when possible.
 	 */
 
 	/*
