@@ -7,23 +7,35 @@ import java.util.Map;
 import java.util.HashMap;
 
 public class Tutorial {
-	
-    public static void main(String[] args) {
 
-    	// Step One: Declare a List
+	public static void main(String[] args) {
 
-    	
-    	// Step Two: Add values to a List
+		// Step One: Declare a List
+		ArrayList<String> names = new ArrayList<String>();
 
-    	
-    	// Step Three: Looping through a List in a for loop
+		// Step Two: Add values to a List
+		names.add("Mark");
+		names.add("Prayash");
+		names.add("Adin");
+		names.add("Monica");
+		names.add("Ashmita");
 
-    	
-    	// Step Four: Remove an item
+		// Step Three: Looping through a List in a for loop
+		for (int i = 0; i < names.size(); i++) {
+			System.out.println(names.get(i));
+		}
 
-    	
-    	// Step Five: Looping through List in a for-each loop
+		// Step Four: Remove an item
+		names.remove(1);
 
-    }
+		System.out.println(names);
+
+		// Step Five: Looping through List in a for-each loop
+
+		for (String mark : names) {
+			System.out.println(mark);
+		}
+
+	}
 
 }
