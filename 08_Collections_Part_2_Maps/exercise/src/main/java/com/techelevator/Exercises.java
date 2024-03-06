@@ -336,16 +336,15 @@ public class Exercises {
      * "xaxxaxaxx": 1, "axxxaaxx": 2}
      *
      */
-
     public Map<String, Integer> last2Revisited(String[] words) {
         Map<String, Integer> result = new HashMap<>();
         for (String word : words) {
             if (word.length() < 2) {
-                continue;
+                continue; // Skip words with less than 2 characters
             }
             int count = 0;
             String lastTwoChars = word.substring(word.length() - 2);
-            for (int i = 0; i < word.length() - 2; i++) {
+            for (int i = 0; i < word.length() - 2; i++) { // Iterate only up to the second last character
                 String pair = word.substring(i, i + 2);
                 if (pair.equals(lastTwoChars)) {
                     count++;
