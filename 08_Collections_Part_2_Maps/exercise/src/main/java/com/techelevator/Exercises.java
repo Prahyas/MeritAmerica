@@ -59,7 +59,6 @@ public class Exercises {
 
         }
 
-
         return "unknown";
     }
 
@@ -247,7 +246,6 @@ public class Exercises {
         return intCountArray;
     }
 
-
     /*
      * Given an array of Strings, return a Map<String, Boolean> where each different
      * String is a key and value
@@ -297,7 +295,7 @@ public class Exercises {
      *
      */
     public Map<String, Integer> consolidateInventory(Map<String, Integer> mainWarehouse,
-                                                     Map<String, Integer> remoteWarehouse) {
+            Map<String, Integer> remoteWarehouse) {
         Map<String, Integer> result = new HashMap<>(mainWarehouse);
 
         for (Map.Entry<String, Integer> entry : remoteWarehouse.entrySet()) {
@@ -338,15 +336,16 @@ public class Exercises {
      * "xaxxaxaxx": 1, "axxxaaxx": 2}
      *
      */
+
     public Map<String, Integer> last2Revisited(String[] words) {
         Map<String, Integer> result = new HashMap<>();
         for (String word : words) {
             if (word.length() < 2) {
-                continue; // Skip words with less than 2 characters
+                continue;
             }
             int count = 0;
             String lastTwoChars = word.substring(word.length() - 2);
-            for (int i = 0; i < word.length() - 2; i++) { // Iterate only up to the second last character
+            for (int i = 0; i < word.length() - 2; i++) {
                 String pair = word.substring(i, i + 2);
                 if (pair.equals(lastTwoChars)) {
                     count++;
