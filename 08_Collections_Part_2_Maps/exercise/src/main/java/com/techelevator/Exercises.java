@@ -340,7 +340,7 @@ public class Exercises {
         Map<String, Integer> result = new HashMap<>();
         for (String word : words) {
             if (word.length() < 2) {
-                continue; // Skip words with less than 2 characters with continue
+                continue; // Skip words with less than 2 characters
             }
             int count = 0;
             String lastTwoChars = word.substring(word.length() - 2);
