@@ -8,29 +8,29 @@ import java.util.List;
  */
 public class ShoppingCart {
 
-	private List<Book> booksToBuy = new ArrayList<>();
+    private List<MediaItem> itemsToBuy = new ArrayList<>();
 
-	public void add(Book bookToAdd) {
-	    booksToBuy.add(bookToAdd);
-	}
+    public void add(MediaItem itemsToAdd) {
+        itemsToBuy.add(itemsToAdd);
+    }
 
-	public double getTotalPrice() {
-	    double total = 0.0;
-	    for (Book book : booksToBuy) {
-	        total += book.getPrice();
-	    }
-	    return total;
-	}
+    public double getTotalPrice() {
+        double total = 0.0;
+        for (MediaItem item : itemsToBuy) {
+            total += item.getPrice();
+        }
+        return total;
+    }
 
-	public String receipt() {
-	    String receipt = "\nReceipt\n";
-	    for (Book book : booksToBuy) {
-	        receipt += book.bookInfo();
-	        receipt += "\n";
-	    }
+    public String receipt() {
+        String receipt = "\nReceipt\n";
+        for (MediaItem item : itemsToBuy) {
+            receipt += item;
+            receipt += "\n";
+        }
 
-	    receipt += "\nTotal: $" + getTotalPrice();
+        receipt += "\nTotal: $" + getTotalPrice();
 
-	    return receipt;
-	}
+        return receipt;
+    }
 }
