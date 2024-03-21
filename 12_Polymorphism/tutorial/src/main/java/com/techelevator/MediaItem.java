@@ -1,10 +1,11 @@
 package com.techelevator;
 
-public class MediaItem {
+public class MediaItem implements Purchasable {
     private String title;
     private double price;
 
-    public MediaItem(){}
+    public MediaItem() {
+    }
 
     public MediaItem(String title, double price) {
         this.title = title;
