@@ -36,7 +36,12 @@ public class BookConverter {
         /*
         Step 2: Open a file for writing the converted text into it
          */
-        try (Scanner fileInput = new Scanner(bookFile)) {
+        // Create a File object for the output file
+        File convertedFile = getConvertedFile(bookFile);
+// Open both the input and output files.
+        try (Scanner fileInput = new Scanner(bookFile);
+             PrintWriter writer = new PrintWriter(convertedFile)) {
+
             // Loop until the end of file is reached
             while (fileInput.hasNextLine()) {
                 // Read the next line into 'lineOfText'
@@ -44,7 +49,7 @@ public class BookConverter {
                 lineCount++;
 
                 // Print the file to the user
-                System.out.println(lineOfText);
+                writer.println(lineOfText.toUpperCase());
             }
         } catch (FileNotFoundException e) {
             // Could not find the file at the specified path.
@@ -53,8 +58,10 @@ public class BookConverter {
         }
 
         // Tell the user what happened.
-        String message = "Displayed " + lineCount +
-                " lines of file " + bookFile.getName();
+        String message = "Converted " + lineCount +
+                " lines of file " + bookFile.getName() +
+                " to " + convertedFile.getName() +
+                " on " + new Date();
         System.out.println(message);
 
         /*
@@ -63,6 +70,14 @@ public class BookConverter {
         throughout history. If the file doesn't exist it will be created. If it already exists, its
         contents will be preserved, and the lines written here will be appended to what was already there.
          */
+        String auditPath = "BookConverter.log";
+        File logFile = new File(auditPath);
+// Using a FileOutputStream with true passed into the constructor opens the file for append.
+        try (PrintWriter log = new PrintWriter(new FileOutputStream(logFile, true))) {
+            log.println(message);
+        } catch (FileNotFoundException e) {
+            System.out.println("*** Unable to open log file: " + logFile.getAbsolutePath());
+        }
 
     }
 
@@ -71,6 +86,7 @@ public class BookConverter {
      * file object based on that file's name, with ".screaming" inserted before the file extension.
      * So, an input file with name "myFile.txt" will return a file named "myFile.screaming.txt".
      * If the is no extension on the input file ("myFile"), then ".screaming" will just be appended ("myFile.screaming").
+     *
      * @param bookFile The input file on which to calculate a new filename.
      * @return A File object whose name includes ".screaming" before the extension.
      */

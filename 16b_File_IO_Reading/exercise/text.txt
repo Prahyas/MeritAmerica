@@ -1,0 +1,8 @@
+today is Sunday
+today is monday
+today is tuesday
+today is wednesday
+today is thursday
+today is friday
+today is saturday
+today is sunday
